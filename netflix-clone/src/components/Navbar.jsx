@@ -6,7 +6,6 @@ function Navbar() {
   return (
     <header className="bg-gray-800">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo + nav */}
         <div className="flex items-center">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
@@ -14,19 +13,27 @@ function Navbar() {
             className="h-8 mr-6"
           />
           <nav className="flex space-x-4">
-            <a href="#" className="text-white hover:text-red-600">
+            <a href="#" className="text-white hover:text-gray-300">
               Home
             </a>
-            <a href="#" className="text-white hover:text-red-600">
-              Account
+            <a href="#" className="text-white hover:text-gray-300">
+              TV Shows
             </a>
-            <a href="#" className="text-white hover:text-red-600">
-              Settings
+            <a href="#" className="text-white hover:text-gray-300">
+              Movies
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              New & Popular
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              My List
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              Browse by Languages
             </a>
           </nav>
         </div>
 
-        {/* Dropdown profilo */}
         <div className="relative">
           <button onClick={() => setOpen(!open)} className="focus:outline-none">
             <img src="https://i.pravatar.cc/40" alt="User Avatar" className="h-8 w-8 rounded" />
